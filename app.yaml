@@ -1,0 +1,9 @@
+runtime: python39
+
+handlers:
+  - url: /Data
+    static_dir: Data
+
+  - url: /(.*)
+    static_files: index.html
+    upload: index.html
